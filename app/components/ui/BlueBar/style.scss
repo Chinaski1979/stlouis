@@ -1,0 +1,71 @@
+#blue-bar {
+  background : #0f4563;
+  padding    : 7px 0;
+
+  .inner-container {
+    max-width : 860px;
+    margin    : 0 auto;
+  }
+
+  .column {
+    color      : #fff;
+    text-align : center;
+  }
+
+  .facebook-logo1 {
+    background    : #fff;
+    border-radius : 100%;
+    color         : #0f4563;
+    cursor        : pointer;
+    display       : inline-block;
+    height        : 28px;
+    margin-right  : 6px;
+    text-align    : center;
+    width         : 28px;
+
+    @media (max-width: 725px) {
+      margin-bottom : 7px;
+    }
+
+    i {
+      margin-top : 8px;
+    }
+  }
+
+  .facebook-logo2 {
+    cursor     : pointer;
+    margin-top : 10px;
+    width      : 70px;
+  }
+
+  button {
+    background    : #3d9be9;
+    border        : 0;
+    border-radius : 2em;
+    display       : inline-block;
+    color         : #fff;
+    cursor        : pointer;
+    margin        : 3px 6px;
+    padding       : 6px;
+    width         : 150px;
+  }
+
+  .main-p {
+    font-size : 1em;
+  }
+
+  .secondary-p {
+    font-size : 13px;
+  }
+
+  .secondary-p,
+  .main-p {
+    margin : 0;
+
+    @media (max-width: 768px) {
+      display   : inline-block;
+      font-size : 13px;
+      margin    : 5px 5px 0;
+    }
+  }
+}

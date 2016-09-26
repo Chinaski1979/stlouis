@@ -1,0 +1,38 @@
+#our-providers {
+
+  .photo {
+    margin-bottom : -4px;
+    width         : 100%;
+  }
+
+  .provider-item {
+    margin    : 0 auto;
+    max-width : 900px;
+    padding   : 4% 3%;
+
+    .doctor-img {
+
+      img {
+        margin : auto;
+        width  : 100%;
+
+        @media (max-width: 768px) {
+          width : 194px;
+        }
+      }
+    }
+
+    .doctor-text {
+      text-align : justify;;
+
+      h4 {
+        color : #0f4563;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .center-item {
+    background : #3d9be9;
+  }
+}

@@ -1,0 +1,92 @@
+#about-us {
+  .photo {
+    margin-bottom : -5px;
+    width         : 100%;
+  }
+
+  .text-over {
+    position: absolute;
+    top: 47%;
+
+    @media(max-width: 1024px) and (orientation: landscape) {//for ipad in landscape
+      top: 30%;
+    }
+
+    @media(max-width: 1133px) {
+      top: 37%;
+    }
+
+    @media(max-width: 962px) {
+      top: 27%;
+    }
+
+    @media(min-width: 767px) and (max-width: 769px){ //for ipad in portrait mode
+      top: 17%;
+    }
+
+    @media(max-width: 753px) {
+      top: 20%;
+    }
+
+    @media(max-width: 665px) {
+      display: none;
+    }
+
+    .text-container {
+      background: #fff;
+      opacity: .7;
+      padding: 0 15px;
+
+      h3 {
+        color : #0f4563;
+        padding-left: 10px;
+        text-align: left;
+      }
+
+      p {
+        text-align: justify;
+      }
+    }
+  }
+
+  .text-over-mobile {
+    display: none;
+
+    @media(max-width: 665px) {
+      display: block;
+    }
+
+    p {
+      text-align: justify;
+
+      @media(max-width: 665px) {
+        font-size : 14px;
+      }
+    }
+  }
+
+  .review {
+    padding : 60px 30px;
+
+    .row {
+      margin    : 0 auto;
+      max-width : 910px;
+
+      .photo {
+        @media(max-width: 767px) {
+          margin-bottom: 17px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        text-align : justify;
+        margin : 0;
+      }
+    }
+  }
+
+  .slide {
+    margin: 10px 0 40px;
+  }
+}

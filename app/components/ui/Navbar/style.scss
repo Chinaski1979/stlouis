@@ -1,0 +1,140 @@
+#navbar {
+  background : linear-gradient(#505050, #666);
+  color      : #fff;
+  padding    : 20px 0 4px;
+
+  @media (min-width: 425px) and (max-width: 788px) {
+    text-align : center;
+  }
+
+  @media (max-width: 425px) {
+    text-align : right;
+  }
+
+  .navlinks-container {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  .logo {
+    display        : inline-block;
+    margin-right   : 11px;
+    vertical-align : middle;
+    width          : 50%;
+
+    @media (max-width: 788px) {
+      padding    : 5px 8px 7px 0;
+      width      : 77%;
+    }
+
+    img {
+      cursor: pointer;
+      width : 84%;
+      float : left;
+
+      @media (min-width: 425px) and (max-width: 788px) {
+        float : none;
+        width : 60%;
+
+      }
+
+      @media (max-width: 425px) {
+        width : 100%;
+      }
+    }
+  }
+
+  .nav-links {
+    display : inline-block;
+    float : right;
+    padding-top: 9px;
+
+    a {
+      border-bottom   : 1px solid #666;
+      color           : #fff;
+      font-size       : 12px;
+      margin          : 7px;
+      text-decoration : none;
+      transition      : all 0.5s ease;
+
+      &:hover {
+        border-bottom-color : #fff;
+      }
+
+      @media (max-width: 788px) {
+        display : none;
+      }
+    }
+
+    // .active {
+    //   border-bottom-color : #fff;
+    // }
+  }
+
+    /* Position and sizing of burger button */
+  .bm-burger-button {
+    position : fixed;
+    width    : 36px;
+    height   : 30px;
+    left     : 17px;
+    top      : 17px;
+    display  : none;
+
+    @media (max-width: 788px) {
+      display : block;
+    }
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background : #fff;
+    border     : 1px solid #000;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height : 24px;
+    width  : 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background : #bdc3c7;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    color      : #fff;
+    background : #373a47;
+    padding    : 2.5em 1.5em 0;
+    font-size  : 1.15em;
+    text-align: center;
+  }
+
+  .menu-item {
+    border-bottom  : 1px solid #bdc3c7;
+    color          : #bdc3c7;
+    display        : block;
+    margin-bottom  : 10px;
+    outline        : none;
+    padding-bottom : 10px;
+    transition     : transform 0.8s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill : #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color   : #b8b7ad;
+    padding : 0.8em;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background : rgba(0, 0, 0, 0.3);
+  }
+}

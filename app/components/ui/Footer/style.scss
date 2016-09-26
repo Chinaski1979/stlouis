@@ -1,0 +1,22 @@
+#footer {
+  background : linear-gradient(#666, #505050);
+  color      : #fff;
+  padding    : 10px 0 10px;
+  text-align : center;
+
+  .footer-logo {
+    display : block;
+    margin  : 0 auto;
+    width   : 35%;
+
+    @media (max-width: 725px) {
+      width : 90%;
+    }
+  }
+
+  a {
+    color           : #fff;
+    margin          : 10px;
+    text-decoration : none;
+  }
+}
